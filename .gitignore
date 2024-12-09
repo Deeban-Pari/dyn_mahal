@@ -1,0 +1,6 @@
+dyn_mahal/backend/node_modules/
+dyn_mahal/frontend/node_modules/
+/dyn_mahal/backend/build/
+/dyn_mahal/frontend/build/
+*.log
+*.env
