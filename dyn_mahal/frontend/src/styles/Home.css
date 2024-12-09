@@ -1,0 +1,48 @@
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title Truncate */
+  .title-truncate {
+    max-width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  /* Badge Styling */
+  .badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.7em;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .badge:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Grid Row Styling */
+  .container {
+    max-width: 1400px;
+  }
+  
+  .hover-card {
+    cursor: pointer;
+  }
+  

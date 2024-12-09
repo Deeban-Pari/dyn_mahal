@@ -1,0 +1,25 @@
+.nav-link {
+    color: white;
+  }
+  
+  .nav-link:hover {
+    color: #2d545e;
+  }
+  
+  .nav-link:active {
+    color: darkgray;
+  }
+  
+  .dropdown-item {
+    color: #5DA2D5;
+  }
+  
+  .dropdown-item:hover {
+    color: #25274D;
+  }
+  
+  .dropdown-item:active {
+    color: #25274D;
+  }
+
+  

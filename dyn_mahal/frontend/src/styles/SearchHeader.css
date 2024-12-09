@@ -1,0 +1,125 @@
+.search-header-container {
+  display: flex;
+  margin: 20px auto;  /* This centers the container and provides some space */
+  width: 100%;
+  max-width: 1200px;  /* Maximum width */
+}
+
+.search-header {
+  width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.search-header h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.search-header .price-slider-container {
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  position: relative;
+}
+
+.price-slider {
+  width: 100%;  /* Make the slider occupy the full width of the container */
+  margin: 10px 0;
+  -webkit-appearance: none;
+  background-color: #007bff;
+  height: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #007bff;
+  cursor: pointer;
+}
+
+.price-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #007bff;
+  cursor: pointer;
+}
+
+.slider-label-left, .slider-label-right {
+  position: absolute;
+  top: 25px;  /* Adjust as needed */
+  font-weight: bold;
+}
+
+.slider-label-left {
+  left: 0;
+}
+
+.slider-label-right {
+  right: 0;
+}
+
+button.custom,
+button.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+}
+
+button.custom:hover,
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+button {
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+}
+
+.search-box .form-control {
+  border-radius: 5px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+.search-header .search-box,
+.search-header .price-slider-container {
+  width: 100%;  /* Make sure elements take full width on small screens */
+}
+
+.search-header .d-flex {
+  flex-direction: column;  /* Stack elements vertically on smaller screens */
+  gap: 15px;
+}
+
+.search-header h4, .search-header p {
+  text-align: center;
+}
+
+.search-header .d-flex {
+  flex-direction: column;
+  gap: 10px;
+}
+}
