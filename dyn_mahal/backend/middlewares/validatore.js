@@ -51,3 +51,18 @@ exports.acceptFPCodeSchema=Joi.object({
     .required()
     .pattern(new RegExp('^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#$%^&*!]).{9,}$')),
 })
+
+exports.acceptSearchText = Joi.object({
+    searchText: Joi.string()
+      .min(1)
+      .max(60)
+      .required()
+      .messages({
+        'string.base': 'Search text must be a string',
+        'string.empty': 'Search text cannot be empty',
+        'string.min': 'Search text must be at least 1 character long',
+        'string.max': 'Search text cannot exceed 60 characters',
+        'any.required': 'Search text is required',
+      }),
+  });
+  
