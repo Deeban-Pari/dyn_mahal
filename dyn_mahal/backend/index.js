@@ -4,6 +4,7 @@ const cors=require('cors');
 const cookieParser=require('cookie-parser');
 const mongoose=require('mongoose');
 const authRouter=require('./routers/authRouter');
+const searchRouter=require('./routers/searchRouter');
 
 const app=express();
 app.use(cors());
@@ -19,6 +20,7 @@ mongoose.connect(process.env.MONGO_URI).then(()=>{
 });
 
 app.use('/api/auth',authRouter);
+app.use('/api',searchRouter);
 
 app.get('/',(req,res)=>{
     res.json({message:'Hello from the server'});

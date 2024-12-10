@@ -4,3 +4,4 @@ dyn_mahal/frontend/node_modules/
 /dyn_mahal/frontend/build/
 *.log
 *.env
+dyn_mahal/backend/seedData.js
